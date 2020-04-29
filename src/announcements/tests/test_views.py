@@ -5,12 +5,13 @@ from django.forms.models import model_to_dict
 from django.urls import reverse
 from django.utils import timezone
 from model_bakery import baker
-from tenant_schemas.test.cases import TenantTestCase
-from tenant_schemas.test.client import TenantClient
 
 from announcements.forms import AnnouncementForm
 from announcements.models import Announcement
 from hackerspace_online.tests.utils import ViewTestUtilsMixin
+
+from django_tenants.test.cases import TenantTestCase
+from django_tenants.test.client import TenantClient
 
 User = get_user_model()
 
