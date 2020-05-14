@@ -5,6 +5,7 @@ from mock import patch
 
 from hackerspace_online.tests.utils import ViewTestUtilsMixin
 
+
 from model_bakery import baker
 from django_tenants.test.cases import TenantTestCase
 from django_tenants.test.client import TenantClient
